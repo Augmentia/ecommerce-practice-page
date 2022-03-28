@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <link rel="stylesheet" href="./style.css"/>
+  <script type="text/javascript" src="./index.js"></script>
+
 
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -30,14 +32,38 @@
     </div>
   </div>
 
-  <div class="flex flex-row items-center justify-center  gap-x-24 pt-12" >
-    <div class="cont-left flex-col p-5" >
-      <img class="rounded-2xl w-96 " src="./images/image-product-1.jpg" alt="product-image-large">
-      <div class="flex flex-row gap-5 w-20 pt-8 pl-x">
-        <img class="rounded-lg" src="./images/image-product-1-thumbnail.jpg" alt="thumbnail 1">
-        <img class="rounded-lg" src="./images/image-product-2-thumbnail.jpg" alt="thumbnail 2">
-        <img class="rounded-lg" src="./images/image-product-3-thumbnail.jpg" alt="thumbnail 3">
-        <img class="rounded-lg" src="./images/image-product-4-thumbnail.jpg" alt="thumbnail 4">
+  <div class=" flex flex-row items-center justify-center  gap-x-24 pt-12" >
+    <div class="cont-left flex-col p-5 max-w-lg" >
+      <img class="rounded-2xl w-fit " src="./images/image-product-1.jpg" alt="product-image-large">
+      <div id="product-image-container" class="flex flex-row gap-5 pt-8 pl-x max-w-5">
+
+        <style>
+        input:checked + label{
+          border: .25rem solid #fb923c;
+          border-radius: 1rem;
+        }
+
+        </style>
+
+        <input type="radio" id="p1" name="radio" class="hidden" />
+        <label for="p1" class="border-transparent border-4 overflow-hidden	" >
+          <img class="rounded-lg hover:shadow-inner hover:shadow-white hover:opacity-50 checked:shadow-inner checked:shadow-white checked:opacity-50" src="./images/image-product-1-thumbnail.jpg" alt="thumbnail 1">
+        </label>
+
+        <input type="radio" id="p2" name="radio" class="hidden" />
+        <label for="p2" class="border-transparent border-4 overflow-hidden">
+          <img class="rounded-lg hover:shadow-inner hover:shadow-white hover:opacity-50" src="./images/image-product-2-thumbnail.jpg" alt="thumbnail 2">
+        </label>
+
+        <input type="radio" id="p3" name="radio" class="hidden" />
+        <label for="p3" class="border-transparent border-4 overflow-hidden">
+          <img class="rounded-lg hover:shadow-inner hover:shadow-white hover:opacity-50" src="./images/image-product-3-thumbnail.jpg" alt="thumbnail 3">
+        </label>
+
+        <input type="radio" id="p4" name="radio" class="hidden" />
+        <label for="p4" class="border-transparent border-4 overflow-hidden">
+          <img class="rounded-lg hover:shadow-inner hover:shadow-white hover:opacity-50" src="./images/image-product-4-thumbnail.jpg" alt="thumbnail 4">
+        </label>
 
       </div>
     </div>
@@ -60,9 +86,9 @@
         <div class="flex flex-row" >
   
           <div class="flex flex-row gap-8 h-12 bg-slate-100 rounded-lg w-32 mr-4 items-center justify-center" >
-            <p class="text-orange-400 font-bold " onclick="console.log(document.getElementById(`quantityField`))" >-</p>
+            <button class="text-orange-400 font-bold " onclick="console.log(document.getElementById(`quantityField`))" >-</button>
             <p id="quantityField" >0</p>
-            <p class="text-orange-400 font-bold" onclick="console.log(`+`)">+</p>
+            <button class="text-orange-400 font-bold" onclick="console.log(`+`)">+</button>
           </div>
 
           <div class="cart-button flex flex-row w-40 bg-orange-400 w-64 justify-center rounded-lg" >
