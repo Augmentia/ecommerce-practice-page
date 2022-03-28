@@ -20,18 +20,18 @@
 
   <div class="navbar flex flex-row mx-32 place-content-between items-center border-b">
     <div class="nav-left flex flex-row">
-      <img src="./images/logo.svg" alt="company logo" />
-      <ul class="flex space-x-8 list-none text-center text-gray-400	">
-        <li class="ml-16">Collections</li>
-        <li>Men</li>
-        <li>Women</li>
-        <li>About</li>
-        <li>Contact</li>
+      <img class='cursor-pointer' src="./images/logo.svg" alt="company logo" />
+      <ul class="flex space-x-8 list-none text-center text-gray-400">
+        <li class="ml-16 cursor-pointer border-transparent hover:border-b-4 hover:border-orange-400">Collections</li>
+        <li class="cursor-pointer border-transparent hover:border-b-4 hover:border-orange-400">Men</li>
+        <li class="cursor-pointer border-transparent hover:border-b-4 hover:border-orange-400">Women</li>
+        <li class="cursor-pointer border-transparent hover:border-b-4 hover:border-orange-400">About</li>
+        <li class="cursor-pointer outline-transparent hover:outline-b-4 hover:outline-orange-400">Contact</li>
       </ul>
     </div>
     <div class="nav-right flex flex-row space-x-20 items-center py-8 ">
-      <img class="cart-icon" src="./images/icon-cart.svg" alt="nav-cart-icon">
-      <img class="nav-avatar h-10" src="./images/image-avatar.png" alt="nav-avatar">
+      <img class="cart-icon cursor-pointer" src="./images/icon-cart.svg" alt="nav-cart-icon">
+      <img class="nav-avatar h-10 cursor-pointer" src="./images/image-avatar.png" alt="nav-avatar">
     </div>
   </div>
 
@@ -51,7 +51,7 @@
           <input type="radio" id="p1" name="radio" class="hidden peer" />
           <label for="p1"
             class="border-transparent border-4 overflow-hidden peer-checked:shadow-inner peer-checked:shadow-white peer-checked:opacity-50">
-            <img class="rounded-lg hover:shadow-inner hover:shadow-white hover:opacity-50"
+            <img class="rounded-lg hover:shadow-inner hover:shadow-white hover:opacity-50 cursor-pointer"
               src="./images/image-product-1-thumbnail.jpg" alt="thumbnail 1">
           </label>
         </li>
@@ -60,16 +60,16 @@
           <input type="radio" id="p2" name="radio" class="hidden peer" />
           <label for="p2"
             class="border-transparent border-4 overflow-hidden peer-checked:shadow-inner peer-checked:shadow-white peer-checked:opacity-50">
-            <img class="rounded-lg hover:shadow-inner hover:shadow-white hover:opacity-50"
+            <img class="rounded-lg hover:shadow-inner hover:shadow-white hover:opacity-50 cursor-pointer"
               src="./images/image-product-2-thumbnail.jpg" alt="thumbnail 2">
           </label>
         </li>
 
         <li class="relative">
           <input type="radio" id="p3" name="radio" class="hidden peer" />
-          <label for="p3" class="border-transparent border-4 overflow-hidden">
+          <label for="p3" class="border-transparent border-4 overflow-hidden w-10">
             <img
-              class="rounded-lg hover:shadow-inner hover:shadow-white hover:opacity-50 peer-checked:shadow-inner peer-checked:shadow-white peer-checked:opacity-50"
+              class="rounded-lg hover:shadow-inner hover:shadow-white hover:opacity-50 peer-checked:shadow-inner peer-checked:shadow-white peer-checked:opacity-50 cursor-pointer"
               src="./images/image-product-3-thumbnail.jpg" alt="thumbnail 3">
           </label>
         </li>
@@ -77,7 +77,7 @@
         <li class="relative">
           <input type="radio" id="p4" name="radio" class="hidden peer" />
           <label for="p4"
-            class="border-transparent border-4 overflow-hidden peer-checked:shadow-inner peer-checked:shadow-white peer-checked:opacity-50">
+            class="border-transparent border-4 overflow-hidden peer-checked:shadow-inner peer-checked:shadow-white peer-checked:opacity-50 cursor-pointer">
             <img class="rounded-lg hover:shadow-inner hover:shadow-white hover:opacity-50"
               src="./images/image-product-4-thumbnail.jpg" alt="thumbnail 4">
           </label>
@@ -106,13 +106,13 @@
         <div class="flex flex-row">
 
           <div class="flex flex-row gap-8 h-12 bg-slate-100 rounded-lg w-32 mr-4 items-center justify-center">
-            <button class="text-orange-400 font-bold "
+            <button class="text-orange-400 font-bold cursor-pointer"
               onclick="decrement()">-</button>
             <p id="counting">0</p>
-            <button class="text-orange-400 font-bold" onclick="increment()">+</button>
+            <button class="text-orange-400 font-bold cursor-pointer" onclick="increment()">+</button>
           </div>
 
-          <div class="cart-button flex flex-row w-40 bg-orange-400 w-64 justify-center rounded-lg">
+          <div class="cart-button flex flex-row w-40 bg-orange-400 w-64 justify-center rounded-lg cursor-pointer">
             <div class="flex flex-row gap-x-4 items-center justify-center">
               <svg width="22" class="" height="20" alt="nav-cart-icon-button">
                 <path
