@@ -16,3 +16,8 @@ function decrement() {
     document.getElementById("counting").innerText = data;
     }
 }
+
+const cartButton = document.getElementById("tr-cart");
+element.addEventListener("click", function() {
+  document.getElementById("demo").innerHTML = "Hello World";
+});
