@@ -17,7 +17,13 @@ function decrement() {
     }
 }
 
-const cartButton = document.getElementById("tr-cart");
-element.addEventListener("click", function() {
-  document.getElementById("demo").innerHTML = "Hello World";
-});
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function cartAppear() {
+    document.getElementById("cart-dropdown").classList.toggle("hidden");
+  }
+
+  window.addEventListener("click", () => {
+    console.log("You knocked?");
+  });
+  

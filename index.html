@@ -30,9 +30,14 @@
       </ul>
     </div>
     <div class="nav-right flex flex-row space-x-20 items-center py-8 ">
-      <img id="tr-cart" class="cursor-pointer" src="./images/icon-cart.svg" alt="nav-cart-icon">
-      <div id="cart-dropdown" class="absolute inset-x-0 bottom-0">
-        <p>Cart</p>
+      <div id="dropdown" class="">
+        <img id="tr-cart" class="cursor-pointer relative" onclick="cartAppear()" src="./images/icon-cart.svg" alt="nav-cart-icon">
+        <div id="cart-dropdown" class="hidden rounded absolute top-20 right-20 bg-red-500 w-72 h-60 flex flex-col justify-items-center">
+          <p class="border-b p-3" >Cart</p>
+          <div class="grow flex flex-col justify-center">
+            <p id="cart-info" class="text-center">Your cart is empty.</p>
+          </div>
+        </div>
       </div>
       <img class="nav-avatar h-10 cursor-pointer" src="./images/image-avatar.png" alt="nav-avatar">
     </div>
