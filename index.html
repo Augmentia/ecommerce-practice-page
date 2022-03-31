@@ -32,7 +32,7 @@
     <div class="nav-right flex flex-row space-x-20 py-8 items-center">
       <div id="dropdown" class="">
         <img id="tr-cart" class="cursor-pointer relative" onclick="cartAppear()" src="./images/icon-cart.svg" alt="nav-cart-icon">
-        <div id="cart-dropdown" class="hidden rounded absolute top-20 right-20 bg-white w-72 h-60 flex flex-col justify-items-center drop-shadow-md">
+        <div id="cart-dropdown" class=" rounded absolute top-20 right-20 bg-white w-72 h-60 flex flex-col justify-items-center drop-shadow-md">
           <p class="border-b p-3" >Cart</p>
           <div class="grow flex flex-col justify-center">
             <p id="cart-info" class="text-center">Your cart is empty.</p>
@@ -96,7 +96,7 @@
     <div class="cont-right flex flex-col w-96 pt-20 place-self-start">
       <p class="text-amber-600">Sneaker Company</p>
 
-      <p class="text-4xl font-bold py-4	">Fall Limited Edition Sneakers</p>
+      <p id="product-name" class="text-4xl font-bold py-4	">Fall Limited Edition Sneakers</p>
 
       <p class="text-gray-500 text-sm pb-4">
         These low-profile sneakers are your perfect casual wear companion. Featuring a
@@ -104,7 +104,7 @@
       </p>
 
       <div class="grid grid-cols-2 grid-rows-2 mb-6 w-52">
-        <p class="col-start-1 row-start-1 font-bold text-2xl place-self-center pr-2">$125.00</p>
+        <p id="product-price" class="col-start-1 row-start-1 font-bold text-2xl place-self-center pr-2">$125.00</p>
         <p
           class="col-start-2 row-start-1 col-start-2 ml-2 mt-0.5 py-0.5 px-1 text-orange-400 bg-orange-100 rounded-lg w-12 text-center justify-self-start font-bold text-lg ">
           50%</p>
@@ -120,8 +120,8 @@
             <button class="text-orange-400 font-bold cursor-pointer" onclick="increment()">+</button>
           </div>
 
-          <div class="cart-button flex flex-row w-40 bg-orange-400 hover:bg-orange-300 w-64 justify-center rounded-lg cursor-pointer" onclick="addProduct()">
-            <div class="flex flex-row gap-x-4 items-center justify-center">
+          <button id="add-button" class="cart-button flex flex-row items-center w-40 bg-orange-400 hover:bg-orange-300 w-64 justify-center rounded-lg cursor-pointer" onclick="addProduct()">
+            <div class="flex flex-row gap-x-4">
               <svg width="22" class="" height="20" alt="nav-cart-icon-button">
                 <path
                   d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
@@ -129,7 +129,7 @@
               </svg>
               <p class="text-white text-sm">Add to cart</p>
             </div>
-          </div>
+          </button>
         </div>
       </div>
     </div>
