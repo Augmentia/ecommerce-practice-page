@@ -1,3 +1,16 @@
+/*window.addEventListener("click", (event) => {
+    if(click)
+  });*/
+
+window.onclick = function(event){
+    if (document.getElementById('cart-dropdown').contains(event.target) || document.getElementById('tr-cart').contains(event.target)){
+        //console.log("meep");
+     } else{
+        //console.log("mop");
+        document.getElementById("cart-dropdown").classList.add("hidden");
+     }
+};
+
 //initialising a variable name data
 var data = 0;
   
@@ -23,7 +36,20 @@ function cartAppear() {
     document.getElementById("cart-dropdown").classList.toggle("hidden");
   }
 
-  window.addEventListener("click", () => {
-    console.log("You knocked?");
-  });
   
+function addProduct() {
+    if(document.getElementById("cart-info").innerText == "Your cart is empty."){
+        console.log("meep");
+        document.getElementById("cart-info").innerHTML = 
+        `
+        <img></img>
+        <p>This is a Product</p>
+        <p></p>
+        <p></p>
+        <button><button>
+        `;
+    }
+    else {
+        console.log("mop");
+    }
+}

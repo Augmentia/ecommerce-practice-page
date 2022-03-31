@@ -29,17 +29,17 @@
         <li class="cursor-pointer outline-transparent hover:outline-b-4 hover:outline-orange-400">Contact</li>
       </ul>
     </div>
-    <div class="nav-right flex flex-row space-x-20 items-center py-8 ">
+    <div class="nav-right flex flex-row space-x-20 py-8 items-center">
       <div id="dropdown" class="">
         <img id="tr-cart" class="cursor-pointer relative" onclick="cartAppear()" src="./images/icon-cart.svg" alt="nav-cart-icon">
-        <div id="cart-dropdown" class="hidden rounded absolute top-20 right-20 bg-red-500 w-72 h-60 flex flex-col justify-items-center">
+        <div id="cart-dropdown" class="hidden rounded absolute top-20 right-20 bg-white w-72 h-60 flex flex-col justify-items-center drop-shadow-md">
           <p class="border-b p-3" >Cart</p>
           <div class="grow flex flex-col justify-center">
             <p id="cart-info" class="text-center">Your cart is empty.</p>
           </div>
         </div>
       </div>
-      <img class="nav-avatar h-10 cursor-pointer" src="./images/image-avatar.png" alt="nav-avatar">
+      <img class="nav-avatar h-10 cursor-pointer border-transparent rounded-full border-2 hover:border-orange-400" src="./images/image-avatar.png" alt="nav-avatar">
     </div>
   </div>
 
@@ -93,7 +93,7 @@
 
       </ul>
     </div>
-    <div class="cont-right flex flex-col w-96 pt-12">
+    <div class="cont-right flex flex-col w-96 pt-20 place-self-start">
       <p class="text-amber-600">Sneaker Company</p>
 
       <p class="text-4xl font-bold py-4	">Fall Limited Edition Sneakers</p>
@@ -120,7 +120,7 @@
             <button class="text-orange-400 font-bold cursor-pointer" onclick="increment()">+</button>
           </div>
 
-          <div class="cart-button flex flex-row w-40 bg-orange-400 w-64 justify-center rounded-lg cursor-pointer">
+          <div class="cart-button flex flex-row w-40 bg-orange-400 hover:bg-orange-300 w-64 justify-center rounded-lg cursor-pointer" onclick="addProduct()">
             <div class="flex flex-row gap-x-4 items-center justify-center">
               <svg width="22" class="" height="20" alt="nav-cart-icon-button">
                 <path
